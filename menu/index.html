@@ -1,0 +1,57 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="resources/menu.css" type="text/css" />
+<script src="resources/menu.js"></script>
+
+<script>
+window.onload = function() {
+window.menu1 = new widgets.Menu( "menu1", { widgetDir : 'resources/',
+                                         clickdrop : true,
+                                         menuContainerWidth : 120 } );
+menu1.setValue( { menu : [
+   { id : "m1", label : "File", menu : [ { id : "save", label : "Save" },  { id : "close", label : "Close" }  ]},
+   { id : "m2", label : "Edit", properties : { "anyproperty" : true }, menu : [
+       { id : "help", label : "Help" }
+   ] }
+] });
+
+window.menu2 = new widgets.Menu( "menu2", {  widgetDir : 'resources/' } );
+menu2.setValue( { menu : [
+   { id : "m1", label : "Options", menu : [ { id : "save", label : "Save" },  { id : "close", label : "Close" }  ]},
+   { id : "m2", label : "Edit", properties : { "anyproperty" : true } }
+] });
+}
+
+ function enable(menu) {
+     window[menu].enableItems("anyproperty", true);
+ }
+ 
+  function disable(menu) {
+     window[menu].enableItems("anyproperty", false);
+ }
+</script>
+</head>
+
+<body>
+
+<h2>Menu test</h2>
+
+<div id="menu1" style="height:20px"></div>
+
+
+<div style="height:300px"></div>
+<a href="javascript:void(0)" onclick="enable('menu1')">Enable</a>
+<a href="javascript:void(0)" onclick="disable('menu1')">Disable</a>
+
+
+<h2> Main Menu test</h2>
+
+<div id="menu2" style="height:20px"></div>
+
+<div style="height:300px"></div>
+<a href="javascript:void(0)" onclick="enable('menu2')">Enable</a>
+<a href="javascript:void(0)" onclick="disable('menu2')">Disable</a>
+
+</body>
+</html>

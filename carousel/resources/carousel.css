@@ -1,0 +1,272 @@
+.carousel {
+  height: auto;
+  border : 0px solid #000;
+  position : relative;
+  overflow : hidden;
+}
+ 
+.carousel a {
+  color : #363F53;
+  text-decoration:none;
+}
+
+.carousel li div {
+    font-size:1.0em;  
+}  
+
+.carousel-id {
+    text-align : center;
+    height : 18px;
+    color : #FFF;
+    float : left;
+    text-decoration:none; 
+}
+
+.carousel-id a {
+  cursor : pointer;
+  color : #FFF;
+  text-decoration : none;
+}
+
+.carousel-id a:hover {
+  text-decoration : underline;
+}
+
+.carousel-item-title {
+  color : #333;
+  font-size:1.2em;
+  height: 1.5em;
+}
+
+.carousel a:hover {
+  text-decoration : underline;
+}
+
+.carousel-control {
+  top:50px;
+  z-index: 9900;
+  position:absolute;
+}
+
+.carousel-control img {
+  padding : 5px;
+  height : 95px;
+  width : 45px;
+}
+
+.carousel-control img:hover {
+  height : 100px;
+  width : 50px;
+}
+
+.carousel-left {
+  left :0px;
+}
+
+.carousel-right {
+  right :0px;
+}
+  
+.carousel-item {
+  float : left;
+  z-index : 2;
+  background : #FFF;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7x;
+  /* -opera-border-radius: 7px; */
+  border-radius: 7px;
+  border : 0;
+  padding : 3px;
+  margin-top : 2px;
+  margin-left : 2px;
+  margin-right : 2px;
+  overflow : hidden;
+}
+
+.carousel-content {  
+  font-size:.8em;
+  z-index :1;
+  position : relative;
+  overflow : hidden;
+}
+
+.carousel-content-scroller  {
+  z-index :1;    
+  position : absolute;
+  overflow-x:hidden;
+  overflow-y:hidden;     
+}
+
+.carousel-item-content {
+  height : 65px;
+  overflow : hidden;  
+  
+}
+
+.carousel-nav {
+    clear:both;
+    display:none;
+    margin-right:50px;
+    margin-left:50px
+    height : 25px;
+}
+
+.carousel-mid {
+    margin-left : auto;
+    margin-right : auto;
+    height : 1.5em;
+}
+
+.carousel-item-selected {
+  background : #99D481;
+}
+
+.carousel-item-content {
+    padding:0 0.5em;
+    position:relative;
+    top:5px;
+}
+
+.carousel-title {
+    padding:0 0.5em;
+    font-size:12px;
+    position:relative;
+}
+
+.carousel-id {
+    width : 15px;
+    height : 20px;
+    margin-left : 3px;
+    margin-right : 3px;
+    padding-left : 2px;
+    padding-right : 2px;
+    cursor : pointer;
+}
+
+/*Carousel kame*/
+.carousel-kame {
+    font-family: "Lucida Grande",Arial,Helvetica,clean,sans-serif;
+    background: #e8f5e4;
+    border: 1px solid #D7F2CF !important;
+    padding:5px;
+}
+
+.carousel-item-kame {
+    border: 1px solid #B8E9AA !important;
+    background:#fff;
+    position:relative;
+}
+
+.carousel-title-kame {
+    color:#fff;
+}
+
+.carousel-title-kame a:link, .carousel-title-kame a:visited {
+    color: #0046A2;
+}
+
+.carousel-id-kame {
+    background:#41b51d;
+    border: 1px solid #B8E9AA !important;
+}
+
+.carousel-id-selected-kame {
+    color:#41b51d;
+    background : #FFF;
+}
+
+/*Carousel Ocean*/
+.carousel-ocean {
+    font-family: "Lucida Grande",Arial,Helvetica,clean,sans-serif;
+    background: #E3EDF7;
+    border: 1px solid #CDDFEC !important;
+    padding:5px;
+}
+
+.carousel-item-ocean {
+    border: 1px solid #B1CBDF !important;
+    background:#fff;
+    position:relative;
+}
+
+.carousel-title-ocean {
+    color:#fff;
+}
+
+.carousel-title-ocean a:link, .carousel-title-ocean a:visited {
+    color: #0046A2;
+}
+
+.carousel-id-ocean {
+    background:#1279c6;
+    border: 1px solid #B1CBDF !important;
+}
+
+.carousel-id-selected-ocean {
+    color:#1279c6;
+    background : #FFF;
+}
+
+/*Carousel Orange*/
+.carousel-orange {
+    font-family: "Lucida Grande",Arial,Helvetica,clean,sans-serif;
+    background: #fdd7c3;
+    border: 1px solid #fc5d0a !important;
+    padding:5px;
+}
+
+.carousel-item-orange {
+    border: 1px solid #fc5d0a !important;
+    background:#fff;
+    position:relative;
+}
+
+.carousel-title-orange {
+    color:#fff;
+}
+
+.carousel-title-orange a:link, .carousel-title-orange a:visited {
+    color: #ff7a34;
+}
+
+.carousel-id-orange {
+    background:#ff7a34;
+    border: 1px solid #fc5d0a !important;
+}
+
+.carousel-id-selected-orange {
+    color:#ff7a34;
+    background : #FFF;
+}
+
+/*Carousel gray*/
+.carousel-gray {
+    font-family: "Lucida Grande",Arial,Helvetica,clean,sans-serif;
+    background: #fff;
+    border: 0;
+    padding:5px;
+}
+
+.carousel-item-gray {
+    border: 1px solid #333 !important;
+    background:#fff;
+    position:relative;
+}
+
+.carousel-title-gray {
+    color:#fff;
+}
+
+.carousel-title-gray a:link, .carousel-title-gray a:visited {
+    color: #333;
+}
+
+.carousel-id-gray {
+    background:#333;
+    border: 1px solid #000 !important;
+}
+
+.carousel-id-selected-gray {
+    color:#333;
+    background : #FFF;
+}

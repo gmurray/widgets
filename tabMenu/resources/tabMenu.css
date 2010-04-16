@@ -1,0 +1,223 @@
+
+/* tab menu styles */
+
+.jm-tm-center {
+    float: left;
+    height: 18px;
+    padding-top: 7px;
+    background: url(images/tabMid.png) repeat-x;
+}
+
+.jm-tm-link {
+    cursor : pointer;
+}
+
+.jm-tm-center .jm-tm-link {
+    color: #333;
+}
+
+.jm-tm-center-selected {
+    height: 18px;
+    padding-top: 7px;
+    float: left;
+    background: url(images/tabSelectedMid.png) repeat-x;
+    cursor: pointer;
+}
+
+.jm-tm-right {
+    float: left;
+    margin-right: 3px;
+    width: 15px;
+    height: 25px;
+    background: url(images/tabRight.png) no-repeat;
+}
+
+.jm-tm-right-selected {
+    float: left;
+    margin-right: 3px;  
+    width: 15px;
+    height: 25px;
+    background: url(images/tabSelectedRight.png) no-repeat;
+}
+
+.jm-tm-left {
+    float: left;
+    margin-left: 3px;
+    width: 15px;
+    height: 25px;
+    background: url(images/tabLeft.png) no-repeat;
+}
+
+.jm-tm-left-selected {
+    float: left; 
+    margin-left: 3px; 
+    width: 15px;
+    height: 25px;
+    background: url(images/tabSelectedLeft.png) no-repeat;
+}
+
+/* tab menu styles: hover */
+
+.jm-tm-center .jm-tm-link:hover,
+.jm-tm-center-selected  .jm-tm-link:hover {
+    text-decoration: none;
+}
+
+.jm-tm-container ul li:hover .jm-tm-left {
+    float: left;
+    margin-left: 3px;
+    width: 15px;
+    height: 25px;
+    background: url(images/tabHoverLeft.png) no-repeat;
+}
+
+.jm-tm-container ul li:hover .jm-tm-center {
+    float: left;
+    height: 18px;
+    padding-top: 7px;
+    background: url(images/tabHoverMid.png) repeat-x;
+}
+
+.jm-tm-container ul li:hover .jm-tm-right {
+    float: left;
+    margin-right: 3px;
+    width: 15px;
+    height: 25px;
+    background: url(images/tabHoverRight.png) no-repeat;
+}
+
+
+/* tabbed menu bottom  border */
+
+.jm-tm-container {
+    border-bottom: 4px solid #a2d1ff;
+    padding-bottom:0;
+}
+
+.jm-tm-container {
+  height : 25px;
+  margin: 0 auto;
+  padding-bottom : 2px;
+}
+
+.jm-tm-container ul {
+  margin : 0;
+  padding :0;
+  position: absolute;
+  list-style : none;
+}
+
+.jm-tm-container ul li {
+ float : left;
+  margin : 0;
+  list-style : none;
+}
+
+.jm-tm-centered {
+  margin-right : auto;
+  margin-left :auto;
+  height : 25px;
+}
+.jm-tm-center-selected a {
+  color : #000;
+}
+
+/* top gray theme */
+.jm-tm-center-gray {
+    background: url(images/tabMid-gray.png) repeat-x;
+}
+
+.jm-tm-center-selected-gray {
+    background: url(images/tabSelectedMid-gray.png) repeat-x;
+}
+
+.jm-tm-right-gray {
+    background: url(images/tabRight-gray.png) no-repeat;
+}
+
+.jm-tm-right-selected-gray {
+    background: url(images/tabSelectedRight-gray.png) no-repeat;
+}
+
+.jm-tm-left-gray {
+    background: url(images/tabLeft-gray.png) no-repeat;
+}
+
+.jm-tm-left-selected-gray {
+    background: url(images/tabSelectedLeft-gray.png) no-repeat;
+}
+
+.jm-tm-container ul li:hover .jm-tm-left-gray {
+    background: url(images/tabHoverLeft-gray.png) no-repeat;
+}
+
+.jm-tm-container ul li:hover .jm-tm-center-gray {
+    background: url(images/tabHoverMid-gray.png) repeat-x;
+}
+
+.jm-tm-container ul li:hover .jm-tm-right-gray {
+    background: url(images/tabHoverRight-gray.png) no-repeat;
+}
+
+.jm-tm-container-gray {
+    border-bottom: 4px solid #333;
+    padding-bottom:0;
+}
+
+.jm-tm-center-selected-gray a {
+    color : #fff;
+}
+
+/* bottom gray theme */
+.jm-tm-center-b-gray {
+    background: url(images/tabMid-b-gray.png) repeat-x;
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+.jm-tm-center-selected-b-gray {
+    background: url(images/tabSelectedMid-b-gray.png) repeat-x;
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+
+.jm-tm-right-b-gray {
+    background: url(images/tabRight-b-gray.png) no-repeat;
+}
+
+.jm-tm-right-selected-b-gray {
+    background: url(images/tabSelectedRight-b-gray.png) no-repeat;
+}
+
+.jm-tm-left-b-gray {
+    background: url(images/tabLeft-b-gray.png) no-repeat;
+}
+
+.jm-tm-left-selected-b-gray {
+    background: url(images/tabSelectedLeft-b-gray.png) no-repeat;
+}
+
+.jm-tm-container ul li:hover .jm-tm-left-b-gray {
+    background: url(images/tabHoverLeft-b-gray.png) no-repeat;
+}
+
+.jm-tm-container ul li:hover .jm-tm-center-b-gray {
+    background: url(images/tabHoverMid-b-gray.png) repeat-x;
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+
+.jm-tm-container ul li:hover .jm-tm-right-b-gray {
+    background: url(images/tabHoverRight-b-gray.png) no-repeat;
+}
+
+.jm-tm-container-b-gray {
+    border : 0;
+    border-top: 4px solid #333;
+    padding-bottom:0;
+}
+
+.jm-tm-center-selected-b-gray a {
+    color : #fff;
+    padding-top: 2px;
+    padding-bottom: 5px;
+}

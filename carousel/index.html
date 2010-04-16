@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+ <link rel="stylesheet" type="text/css" href="resources/carousel.css" />
+ <script src="resources/carousel.js" type="text/javascript"></script>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+
+<div style="height:245px;width:400px">  
+ <div id="carousel" class="carousel">  
+   <div id="carousel_navLeft" class="carousel-control carousel-left"></div>  
+   <div id="carousel_navRight" class="carousel-control carousel-right"></div>  
+   <div style="margin-right:50px;margin-left:50px" id="carousel_scrollpane" class="carousel-content">  
+        <div id="carousel_content" class="carousel-content-scroller"> </div>  
+    </div>  
+    <div id="carousel_nav" class="carousel-nav">  
+        <div id="carousel_mid" class="carousel-mid"></div>  
+   </div>  
+ </div>  
+</div>
+<div id="carousel_template" style="display:none">  
+ <div class="carousel-item">  
+   <div style="height:2em;font-size:1.5em">@{title}</div>  
+     <div id="carousel_item_@{id}">  
+      <div style="float:left;width:500px"><img src="@{image}"></div>  
+      <div style="margin-left:500px;margin-right:65px;padding:5px">@{description}</div>  
+      </div>  
+     </div>  
+   </div>
+</div>
+<div> 
+  <a href="javascript:void(0)" onclick="carousel.pause();carousel.getPrevious()">Previous</a>
+  <a href="javascript:void(0)" onclick="carousel.pause();carousel.getNext()">Next</a>
+</div>
+<script>
+  var carousel = new widgets.Carousel( "carousel", {
+                                         widgetDir : "resources/",
+                                         args : { itemWidth : 400, theme : 'gray' },
+                                         value : [
+         { "title" : "Kumamoto Castle",  
+           "image" : "images/1.jpg",  
+           "description" : "Kumamoto Castle was completed in 1607 by Kiyomasa Kato. Kumamoto Castle is located Kyushu Japan. Inside of the castle walls is the Kato Shrine."  
+         },  
+         { "title" : "Greg and Etsuko in Kimonos",  
+           "image" : "images/2.jpg",  
+           "description" : "Traditional wedding kimonos taken from a roof garden with Kumamoto castle in the background. "  
+         },  
+         { "title" : "Napa",  
+           "image" : "images/3.jpg",  
+           "description" : "Etsuko shows off some grapes at Pride Mountain winery in the Napa valley near harvest season.." },  
+         { "title" : "San Francisco",  
+           "image" : "images/4.jpg",  
+           "description" : "A great view of a cable car with Etsuko and her friends. This page was taken near Fisherman's Warf."  
+         }
+    ] } );
+    widgets.log("carousel done");
+</script>
+</body>
+
+</html>

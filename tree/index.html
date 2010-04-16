@@ -1,0 +1,34 @@
+<html>
+<head>
+<link rel="stylesheet" href="resources/tree.css" type="text/css" />
+<script src="resources/tree.js"></script>
+<script>
+  window.onload = function() {
+   window.tree = new widgets.Tree( "mytree",
+    { 
+    });
+    tree.setValue( [
+                    { "children":[
+                                  { "label" : "Good", "children" : [
+                                                                    { "label" : "New" },
+                                                                    { "label" : "Old" },
+                                                                    { "label" : "Former" }
+                                                                     ] },
+                                  { "label" : "Bad" },
+                                  { "label" : "Ugly" }
+                                   ]
+                    },
+                    { "Width" : 200 }, 
+                    { "children":[ "New Single" , "Old Single", "Former Single" ]
+                      }
+                    ] ); 
+  }
+</script>
+</head>
+
+<body>
+</body>
+  <div id="mytree"></div>
+  <div style="height:50px"></div>
+  <div>This widget is still a work in progress.</div>
+</html>

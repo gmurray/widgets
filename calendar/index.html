@@ -1,0 +1,28 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="resources/calendar.css" type="text/css" />
+<script src="resources/calendar.js"></script>
+
+<script>
+
+window.onload = function() {
+
+    window.calendar = new widgets.Calendar( "calendar",
+      { publish : "/mycalendar",
+        widgetDir : "resources/"
+    } );
+
+}
+
+
+</script>
+</head>
+
+<body>
+
+<h2>Calendar test</h2>
+<div id="calendar" style="width:500px;height:500px"></div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="resources/tabmenu.css" type="text/css" />
+<script src="resources/tabmenu.js"></script>
+<style>
+.hiddenTab {
+  display : none;
+}
+.visibleTab {
+  display : block;
+}
+</style>
+
+<script>
+function processTabSelect( args ) {
+    document.getElementById( "block1Tab" ).className = "hiddenTab";
+    document.getElementById( "block2Tab" ).className = "hiddenTab";
+    document.getElementById( "block3Tab" ).className = "hiddenTab";
+    document.getElementById( args.targetId + "Tab" ).className = "visibleTab";
+} 
+
+window.onload = function() {
+  var tabs = { "menu" : [
+                           { "label" : "Source", "id" : "block1" },
+                           { "label" : "Text", "id" : "block2" },
+                           { "label" :"HTML", "id" : "block3"}
+                           ]
+                      };
+    window.menu= new widgets.TabMenu( "mytabmenu", 
+      { publish : '/mytab',
+        value : tabs 
+    } );
+
+    widgets.subscribe( "/mytab/onSelect", processTabSelect );
+}
+
+
+</script>
+</head>
+
+<body>
+
+<h2>TabMenu test</h2>
+<div id="mytabmenu"></div>
+<div id="block1Tab" class="visibleTab">Block 1</div>
+<div id="block2Tab" class="hiddenTab">Block 2</div>
+<div id="block3Tab"class="hiddenTab">Block 3</div>
+
+</body>
+</html>

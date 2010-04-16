@@ -1,0 +1,87 @@
+.widgets-tree {
+   font-size : 1.3em;
+   margin : 0px 0px 0px 0px;
+   padding : 0;
+
+}
+
+.widgets-tree li {
+   list-style : none;
+   padding-left : 5px;
+}
+
+.widgets-tree li ul li {
+   border-left : 1px solid #eee;
+}
+
+.widgets-tree ul {
+  padding :  0 0 0 5px;
+
+}
+
+.widgets-tree-folder {
+  clear : left;
+  cursor : pointer;
+  padding-left : 5px;
+}
+
+.widgets-tree-leaf {
+  clear :both;
+  padding-top : 4px;
+  padding-bottom : 4px;
+  cursor : pointer;
+  height : 22px;
+  font-size : 15px;
+}
+.widgets-tree-leaf div {
+  float : left;
+}
+
+.widgets-tree-leaf:last-child {
+  padding-left : 15px;
+}
+
+.widgets-tree-leaf-icon-label {
+   padding-left : 5px;
+   padding-right : 5px;
+}
+
+.widgets-tree-leaf-icon {
+   width : 20px;
+   height : 22px;
+   background : url( 'images/json.png' ) no-repeat;
+}
+
+.widgets-tree-leaf-value-icon {
+   width : 20px;
+   height : 22px;
+   background : url( 'images/value-node.png' ) no-repeat;
+}
+
+
+.widgets-tree-folder-label {
+   padding-top : 3px;
+   padding-left : 5px;
+   padding-right : 5px;
+   width : 300px;
+}
+
+.widgets-tree-folder-closed-icon {
+   width : 35px;
+   height : 35px;
+   background : url( 'images/folder-closed.png' ) no-repeat;
+}
+
+.widgets-tree-folder-open-icon {
+   width : 35px;
+   height : 35px;
+   background : url( 'images/folder-open.png' ) no-repeat;
+}
+
+.widgets-tree-folder img {
+   float : left;
+}
+
+.widgets-tree-folder>div {
+   float : left;
+}

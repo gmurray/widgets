@@ -1,0 +1,47 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="resources/lightbox.css" type="text/css" />
+<script src="resources/lightbox.js"></script>
+
+<script>
+window.onload = function() {
+window.lbm = new widgets.LightboxManager( { widgetDir : 'resources/' } );
+}
+
+function showLightbox() {
+    if ( ! lbm.lightboxes[ "lb1" ] ) {
+        lbm.addLightbox( {
+            "id" : "lb1",
+            "label" : "Lightbox 1",
+            "content" : "I am the content.",
+            startHeight : 200,
+            startWidth : 300
+        } );
+    } else {
+        lbm.lightboxes[ "lb1" ].show();
+    }
+}
+
+function removeLightbox() {
+    lbm.removeLightbox( "lb1" );
+}
+
+function updateContent() {
+    if ( lbm.lightboxes[ "lb1" ] ) {
+        lbm.lightboxes[ "lb1" ].setContent( "New content here" );
+    }
+}
+</script>
+</head>
+
+<body>
+
+<h2>Lightbox test</h2>
+
+<a href="javascript:void(0)" onclick="showLightbox()">Show</a><br/>
+<a href="javascript:void(0)" onclick="removeLightbox()">Remove</a><br/>
+<a href="javascript:void(0)" onclick="updateContent()">Update Content of Existing Lightbox</a><br/>
+
+</body>
+</html>
